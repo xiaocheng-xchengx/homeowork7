@@ -54,11 +54,6 @@ function gettingJSON(){
 
         console.log("tempImg: " + tempImg);
 
-        // Update zip code to real location name
-        if (/^\d+$/.test(location.split(",")[0])) {
-            document.getElementById('location').value = json.name + "," + json.sys.country;
-        }
-
         document.getElementById('loc').textContent = loc;
         document.getElementById('temp').textContent = temp;
         document.getElementById('tempImg').src = tempImg;
