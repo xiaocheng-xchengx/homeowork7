@@ -29,7 +29,7 @@ function gettingJSON(){
     let query;
     // Your code here.  
     let appid = "3b68941e28e061b39ae1314fa8ec1744";
-    query = `http://api.openweathermap.org/data/2.5/weather?q=${location}&units=${format}&appid=${appid}`
+    query = `https://api.openweathermap.org/data/2.5/weather?q=${location}&units=${format}&appid=${appid}`
     console.log("Query is :" + query);
 
     //Create and set variables for each of the elements you
