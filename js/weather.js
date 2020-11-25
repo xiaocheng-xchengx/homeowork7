@@ -50,7 +50,7 @@ function gettingJSON(){
 
         loc = json.name;
         temp = json.main.temp + " with " + json.weather[0].description;
-        tempImg = "http://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
+        tempImg = "https://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
 
         console.log("tempImg: " + tempImg);
 
