@@ -50,13 +50,14 @@ function gettingJSON(){
 
         loc = json.name;
         temp = json.main.temp + " with " + json.weather[0].description;
-        tempImg = "https://openweathermap.org/img/w/" + json.weather[0].icon + ".png";
+        tempImg = "http://openweathermap.org/img/wn/" + json.weather[0].icon + ".png";
 
         console.log("tempImg: " + tempImg);
 
         document.getElementById('loc').textContent = loc;
         document.getElementById('temp').textContent = temp;
         document.getElementById('tempImg').src = tempImg;
+        document.getElementById('tempImg').alt = json.weather[0].description;
         document.getElementById('forecast').style.display = "block";
     });
 }
